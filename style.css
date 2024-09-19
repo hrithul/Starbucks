@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+
+#dark-background {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.24);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 72px;
+    left: 0;
+    z-index: 9999;
+}
+
+header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 72px;
+    width: 100%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .1), 0 2px 2px rgba(0, 0, 0, .06), 0 0 2px rgba(0, 0, 0, .07);
+    padding: 0 40px;
+    z-index: 9999999;
+}
+
+header .desktop-menu {
+    display: none;
+}
+
+/* hidden menu designing */
+
+header #mobile-hidden-menu {
+    display: none;
+    position: absolute;
+    top: 72px;
+    right: 0;
+    width: 80%;
+    height: 100vh;
+    background-color: white;
+    color: white;
+    z-index: 999;
+}
+
+header #mobile-hidden-menu .sec-1 {
+    padding: 0 32px;
+}
+
+header #mobile-hidden-menu .sec-2 {
+    padding: 0 24px;
+}
+
+header #mobile-hidden-menu .sec-1 ul li {
+    padding: 16px 0;
+}
+
+header #mobile-hidden-menu .sec-1 ul li a {
+    font-size: 1.3rem;
+}
+
+/* hidden menu end */
+#menu-close {
+    display: none;
+}
+
+header .mobile-menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+
+}
+
+header a:hover {
+    color: #198754;
+}
+
+
+
+header .logo svg {
+    height: 50px !important;
+    width: 50px !important;
+}
+
+/* header-left */
+
+header .header-left ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+header .header-left ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* header-right */
+
+header .header-right {
+    display: flex;
+    gap: 56px;
+    align-items: center;
+}
+
+header .header-right .buttons {
+    display: flex;
+    gap: 16px;
+}
+
+
+section.section-7{
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .1), 0 2px 2px rgba(0, 0, 0, .06), 0 0 2px rgba(0, 0, 0, .07);
+}
+
+
+
+/* main */
+
+main section .col-md-6 .content {
+    padding: 0 5.8rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+
+}
+
+main section .col-md-6 .content h2 {
+    font-size: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+main section .col-md-6 .content p {
+    font-size: 24px;
+    text-align: center;
+}
+
+main section .col-md-6 img.img-fluid {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* footer start */
+
+footer a{
+    text-decoration: none;
+}
+
+footer ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+footer  .sec-1{
+   padding: 0 40px;
+}
+
+footer  .sec-1 .content .heading h6{
+   font-size: 1.2rem;
+}
+
+footer  .sec-1 .content .heading {
+    font-size: 1.3rem;
+ }
+
+ footer  .sec-1 .content .items ul li{
+   
+    margin-bottom: 20px;
+}
+
+footer  .sec-1 .content .items ul li a{
+    color: rgba(0, 0, 0, .58);
+    font-weight: 500;
+}
+
+
+.bi-chevron-up{
+    font-size: 1.5rem;
+    font-weight: 500;
+    display: none;
+}
+
+.bi-chevron-down{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#about-us,#careers,#social-impact,#for-business-partner,#order-and-pickup{
+    display: none;
+}
+
+.sm-info ul li{
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.soical-icons i{
+    margin-right: 10px;
+}
+
+/* footer end */
+
+/* Media Query */
+
+@media (min-width: 375px) {
+    main section .col-md-6 .content h2 {
+        font-size: 28px;
+        
+    }
+
+    main section .col-md-6 .content p {
+        font-size: 22px;
+        text-align: center;
+    }
+}
+
+@media(min-width:768px) {
+    main section .col-md-6 .content p {
+        font-size: 24px;
+        text-align: center;
+    }
+
+}
+
+
+/* Desktop Header */
+@media(min-width:788px) {
+    header {
+        height: 100px;
+    }
+
+    header .desktop-menu {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
+
+    header .mobile-menu {
+        display: none;
+    }
+
+    main section .col-md-6 .content {
+        padding: 32px 16px;
+
+
+    }
+}
+
+@media(min-width:1024px) {
+    main section .col-md-6 .content h2 {
+        font-size: 50px;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+
+    footer{
+        margin-top: 24px;
+    }
+
+    #mobile-footer {
+        display: flex;
+        gap: 50px;
+    }
+
+    .footer-container{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        gap: 50px;
+    }
+
+    .bi-chevron-up{
+        display: none;
+    }
+    
+    .bi-chevron-down{
+        display: none;
+    }
+
+    #about-us,#careers,#social-impact,#for-business-partner,#order-and-pickup{
+        display: block;
+    }
+
+    
+}
+
+
+
+
+/* @media(max-width:788px){
+   
+    
+
+    
+} */
+
+@media(max-width:815px) {
+
+    main section .col-md-6 .content {
+        padding: 32px 16px;
+
+
+    }
+
+    main section .container-xxl .row {
+        flex-direction: column !important;
+    }
+
+    main section .container-xxl .row .col-md-6 {
+        width: 100%;
+    }
+}
